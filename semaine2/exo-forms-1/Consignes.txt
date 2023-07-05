@@ -1,0 +1,6 @@
+Créer une page de demande de réservation d'un hôtel suivant le modèle fourni en PJ.
+Les données saisies par l'utilisateur ne sont pas sensibles, vous choisirez la méthode d'envoi des données adaptée à cette situation.
+
+
+Pour ajouter le style CSS vous pouvez copier et coller à l'intérieur de la balise <head></head> ceci : 
+<style>body{width: 50%;margin: auto;border:1px solid gray;padding:20px 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}h1,h3{background:white;text-align:center;} label, input, select {margin-bottom: 15px;}</style>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation</title>
+    <style>
+        body {
+            width: 50%;
+            margin: auto;
+            border: 1px solid gray;
+            padding: 20px 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h1, h3 {
+            background: white;
+            text-align: center;
+        }
+
+        form {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+        label, select, input[type="submit"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demande de réservation d'hôtel</h1>
+    
+    <form action="/submit" method="POST">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+      
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+      
+        <label for="telephone">Numéro de téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+      
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="ville">Ville :</label>
+        <select id="ville" name="ville" required>
+            <option disabled selected>Choisissez votre option</option>
+            <option value="lille">Lille</option>
+            <option value="paris">Paris</option>
+            <option value="lyon">Lyon</option>
+            <option value="marseille">Marseille</option>
+        </select>
+      
+        <label for="date_arrivee">Date d'arrivée :</label>
+        <input type="date" id="date_arrivee" name="date_arrivee" required>
+      
+        <label for="nombre_personnes">Nombre de personnes :</label>
+        <input type="number" id="nombre_personnes" name="nombre_personnes" required>
+      
+        <label>Options :</label>
+        <input type="checkbox" id="clim" name="clim" value="clim">
+        <label for="clim">Climatisation</label>
+        <input type="checkbox" id="minibar" name="minibar" value="minibar">
+        <label for="minibar">Mini bar</label>
+        <input type="checkbox" id="jacuzzi" name="jacuzzi" value="jacuzzi">
+        <label for="jacuzzi">Jacuzzi</label>
+      
+        <label for="commentaire">Commentaire :</label>
+        <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea>
+      
+        <input type="checkbox" id="acceptation" name="acceptation" required>
+        <label for="acceptation">J'accepte les conditions générales</label>
+      
+        <input type="submit" value="Envoyer ma demande">
+    </form>
+</body>
+</html>
